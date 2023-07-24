@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { Issue } from "../interfaces/Issues";
+import { IIssue } from "../interfaces/Iissues";
 import { IssueItem } from "./IssueItem";
 
 interface Props {
-  issues: Issue[];
+  issues: IIssue[];
 }
 
 export const IssueList: FC<Props> = ({ issues }) => {

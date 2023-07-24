@@ -1,9 +1,9 @@
 import { FC } from "react";
 import ReactMarkdown from "react-markdown";
-import { Issue } from "../interfaces/Issues";
+import { IIssue } from "../interfaces/Iissues";
 
 interface Props {
-  issue: Issue;
+  issue: IIssue;
 }
 
 export const IssueComment: FC<Props> = ({ issue }) => {

@@ -21,7 +21,8 @@ export const getIssueComments = async (
   return data;
 };
 
-export const useIssue = (issueNumber: number) => {
+export const useIssue = async (issueNumber: number) => {
+  await sleep(2);
   const issueQuery = useQuery(["issue", issueNumber], () =>
     getIsueInfo(issueNumber)
   );
